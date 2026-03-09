@@ -1,0 +1,26 @@
+###
+POST http://localhost:8080/tongueDiagnosis/syncByUrl
+Content-Type: application/json
+
+{
+  "outId": "test1112492",
+  "age": 20,
+  "sex": "1",
+  "height": 170,
+  "weight": 60,
+  "tongueTopUrl": "https://wx.hzliuzhi.com/media/knowledge/tongue.jpg",
+  "tongueUnderUrl": "https://wx.hzliuzhi.com/media/knowledge/tongueBack.jpg",
+  "faceUrl": "https://wx.hzliuzhi.com/media/knowledge/face_main.jpg"
+}
+
+###
+POST http://localhost:8080/tongueDiagnosis/syncByBase64
+Content-Type: application/json
+
+{
+  "outId": "test1112492",
+  "age": 20,
+  "sex": "1",
+  "height": 170,
+  "weight": 60
+}

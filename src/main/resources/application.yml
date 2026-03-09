@@ -1,0 +1,8 @@
+server:
+  port: 8080
+knowledge:
+  appId: 联系开发获取应用ID
+  appPwd: 联系开发获取应用密码
+  #测试环境（请使用该环境进行测试）
+  urlPrefix: https://dev.hzliuzhi.com:62006/knowledge/
+  rsaPublicKey: 联系开发获取密钥

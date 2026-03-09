@@ -1,0 +1,89 @@
+###
+POST http://localhost:8080/treatment/syndrome
+Content-Type: application/json
+
+{
+  "disCode": "A06.02",
+  "page": 1,
+  "limit": 10
+}
+
+###
+POST http://localhost:8080/treatment/syndrome
+Content-Type: application/json
+
+{
+  "disCode": "A06.02",
+  "keyWord": "阴虚",
+  "page": 1,
+  "limit": 10
+}
+
+###
+POST http://localhost:8080/treatment/syndrome
+Content-Type: application/json
+
+{
+  "disCode": "A06.02",
+  "keyWord": "yx",
+  "searchType": "1",
+  "page": 1,
+  "limit": 10
+}
+
+
+###
+POST http://localhost:8080/treatment/therapy
+Content-Type: application/json
+
+{
+  "disCode": "A06.02",
+  "synCode": "B04.06.02.05.03.03",
+  "page": 1,
+  "limit": 10
+}
+
+###
+POST http://localhost:8080/treatment/therapy
+Content-Type: application/json
+
+{
+  "disCode": "A06.02",
+  "synCode": "B04.06.02.05.03.03",
+  "keyWord": "滋补",
+  "page": 1,
+  "limit": 10
+}
+
+###
+POST http://localhost:8080/treatment/therapy
+Content-Type: application/json
+
+{
+  "disCode": "A06.02",
+  "synCode": "B04.06.02.05.03.03",
+  "keyWord": "sh",
+  "searchType": "1",
+  "page": 1,
+  "limit": 10
+}
+
+
+###
+POST http://localhost:8080/treatment/infer
+Content-Type: application/json
+
+{
+  "disCode": "A06.02",
+  "synCode": "B04.06.02.05.03.03",
+  "therapyCode": "C02.11.03.07"
+}
+###
+POST http://localhost:8080/treatment/infer
+Content-Type: application/json
+
+{
+  "disCode": "A04.05.13",
+  "synCode": "B02.02.03.01",
+  "therapy": "疏散风邪"
+}
