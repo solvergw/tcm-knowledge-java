@@ -1,0 +1,102 @@
+###
+POST http://localhost:8080/dialogAi/extract
+Content-Type: application/json
+
+{
+  "dialogId": "test1112492",
+  "text": "患者近两周反复乏力、食欲不振、睡眠较差，晨起困倦明显，偶有胃脘胀满。舌淡，苔薄白，面色少华。"
+}
+
+
+###
+POST http://localhost:8080/dialogAi/conditioning
+Content-Type: application/json
+
+{
+  "dialogId": "test1112492",
+  "over": false,
+  "classify": "report",
+  "content": "患者近两周反复乏力、食欲不振、睡眠较差，晨起困倦明显，偶有胃脘胀满。舌淡，苔薄白，面色少华。",
+  "nextQuestions": null,
+  "selectedSymptoms": null,
+  "yourSymptoms": "反复乏力、食欲不振、睡眠较差、晨起困倦明显、偶有胃脘胀满",
+  "aiSymptoms": null,
+  "worst": "睡眠较差",
+  "period": "近两周",
+  "impact": "中度",
+  "willillState": null,
+  "willillDegree": null,
+  "willillFunction": {
+    "code": null,
+    "name": "躯体性疲劳状态",
+    "description": null,
+    "remarks": null
+  },
+  "constitutions": [
+    {
+      "id": null,
+      "name": "气虚质",
+      "definition": null,
+      "generalCharacteristics": null,
+      "physicalCharacteristics": null,
+      "psychicCharacteristics": null,
+      "commonManifestations": null,
+      "diseaseTendency": null,
+      "adaptability": null,
+      "principle": null,
+      "description": null,
+      "remarks": null,
+      "objects": null
+    },
+    {
+      "id": null,
+      "name": "阳虚质",
+      "definition": null,
+      "generalCharacteristics": null,
+      "physicalCharacteristics": null,
+      "psychicCharacteristics": null,
+      "commonManifestations": null,
+      "diseaseTendency": null,
+      "adaptability": null,
+      "principle": null,
+      "description": null,
+      "remarks": null,
+      "objects": null
+    }
+  ],
+  "constitutionVos": null,
+  "constitutionResult": "气虚质兼阳虚质",
+  "factors": [
+    {
+      "code": null,
+      "name": "乏力",
+      "description": null,
+      "score": null
+    },
+    {
+      "code": null,
+      "name": "睡眠不足",
+      "description": null,
+      "score": null
+    },
+    {
+      "code": null,
+      "name": "胃脘胀满",
+      "description": null,
+      "score": null
+    }
+  ],
+  "syndromes": [
+    {
+      "id": null,
+      "code": null,
+      "name": "脾虚证",
+      "analysis": null,
+      "remarks": null
+    }
+  ],
+  "tongue": "舌淡，苔薄白",
+  "face": "面色少华",
+  "tongueFaceResult": null,
+  "extendFlowData": null
+}

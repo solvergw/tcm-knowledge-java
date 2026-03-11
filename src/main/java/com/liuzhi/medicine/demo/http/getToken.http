@@ -1,11 +1,2 @@
 ###
-GET https://dev.hzliuzhi.com:62006/knowledge/sys/app/token?appId=100005&appPwd=100005
-
-
-###
-POST http://localhost:8080/acu/acuMeridian/detail
-Content-Type: application/json
-
-{
-  "id": 11
-}
+GET https://dev.hzliuzhi.com:62006/knowledge/sys/app/token?appId=xxx&appPwd=xxx
