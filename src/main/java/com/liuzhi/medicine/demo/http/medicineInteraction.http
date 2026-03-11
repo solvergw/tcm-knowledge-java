@@ -1,0 +1,58 @@
+
+###
+POST http://localhost:8080/medicineInteraction/medicine
+Content-Type: application/json
+
+{
+  "gender": "F",
+  "gravidity": "Y",
+  "age": 18,
+  "disId": "",
+  "synId": "",
+  "medList": [
+    {
+      "medId": 100
+    },
+    {
+      "medId": 101
+    },
+    {
+      "medId": 627
+    }
+  ]
+}
+
+###
+POST http://localhost:8080/medicineInteraction/report
+Content-Type: application/json
+
+{
+  "gender": "F",
+  "gravidity": "Y",
+  "age": 18,
+  "disId": "",
+  "synId": "",
+  "medList": [
+    {
+      "medId": 100,
+      "medName": "川乌",
+      "medDose": "30",
+      "medUnit": "g",
+      "medUsage": ""
+    },
+    {
+      "medId": 101,
+      "medName": "制川乌",
+      "medDose": "30",
+      "medUnit": "g",
+      "medUsage": ""
+    },
+    {
+      "medId": 627,
+      "medName": "半夏",
+      "medDose": "1",
+      "medUnit": "g",
+      "medUsage": ""
+    }
+  ]
+}
